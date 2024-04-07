@@ -1,6 +1,5 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import TabRoutes from "./tab.route";
 import Profile from "../screens/Profile";
 
 const Stack = createNativeStackNavigator();
