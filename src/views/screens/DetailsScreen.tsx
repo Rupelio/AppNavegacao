@@ -59,7 +59,7 @@ const DetailsScreen: React.FC<DetailsScreenProps> = ({ navigation, route }) => {
             only five centuries.
           </Text>
           <View style={{ marginTop: 40, marginBottom: 40 }}>
-            <SecondaryButton title="Add To Cart" />
+            <SecondaryButton title="Adicione ao Carinho" />
           </View>
         </View>
       </ScrollView>

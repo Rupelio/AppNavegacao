@@ -10,7 +10,7 @@ interface Food {
   id: string;
   name: string;
   ingredients: string;
-  price: string;
+  price: number;
   image: any;
 }
 

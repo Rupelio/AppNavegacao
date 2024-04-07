@@ -17,6 +17,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import COLORS from '../../consts/colors';
 import categories from '../../consts/categories';
 import foods from '../../consts/foods';
+import DetailsScreen from './DetailsScreen';
 
 const { width } = Dimensions.get('screen');
 const cardWidth = width / 2 - 20;

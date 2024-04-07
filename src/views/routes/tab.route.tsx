@@ -6,6 +6,8 @@ import COLORS from '../../consts/colors';
 import { View } from 'react-native';
 import HomeScreen from '../screens/HomeScreen';
 import CartScreen from '../screens/CartScreen';
+import DetailsScreen from '../screens/DetailsScreen';
+import OnBoardScreen from '../screens/OnBoardScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -55,7 +57,7 @@ const TabRoutes: React.FC = () => {
       />
       <Tab.Screen
         name="Favorite"
-        component={HomeScreen}
+        component={OnBoardScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <Icon name="favorite" color={color} size={28} />

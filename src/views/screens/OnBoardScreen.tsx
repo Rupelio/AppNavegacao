@@ -24,7 +24,7 @@ const OnBoardScreen: React.FC<OnBoardScreenProps> = ({ navigation }) => {
       <View style={style.textContainer}>
         <View>
           <Text style={{ fontSize: 32, fontWeight: 'bold', textAlign: 'center' }}>
-            Delicious Food
+            Comida Deliciosa
           </Text>
           <Text
             style={{
@@ -33,7 +33,7 @@ const OnBoardScreen: React.FC<OnBoardScreenProps> = ({ navigation }) => {
               textAlign: 'center',
               color: COLORS.grey,
             }}>
-            We help you to find best and delicious food
+            Nós te ajudamos a encontrar a melhor e mais deliciosa comida
           </Text>
         </View>
         <View style={style.indicatorContainer}>
