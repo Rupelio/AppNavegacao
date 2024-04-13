@@ -22,6 +22,10 @@ export default function StackRoutes() {
         name="new"
         component={New}
       />
+      <Stack.Screen
+        name="details"
+        component={DetailsScreen}
+      />
     </Stack.Navigator>
   )
 }

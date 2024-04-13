@@ -17,7 +17,6 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import COLORS from '../../consts/colors';
 import categories from '../../consts/categories';
 import foods from '../../consts/foods';
-import DetailsScreen from './DetailsScreen';
 
 const { width } = Dimensions.get('screen');
 const cardWidth = width / 2 - 20;
@@ -144,7 +143,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
           <Icon name="search" size={28} />
           <TextInput
             style={{ flex: 1, fontSize: 18 }}
-            placeholder="Search for food"
+            placeholder=" Procure seus pratos"
           />
         </View>
         <View style={style.sortBtn}>

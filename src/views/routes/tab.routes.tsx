@@ -6,14 +6,15 @@ import COLORS from '../../consts/colors';
 import { View } from 'react-native';
 import HomeScreen from '../screens/HomeScreen';
 import CartScreen from '../screens/CartScreen';
-import DetailsScreen from '../screens/DetailsScreen';
 import OnBoardScreen from '../screens/OnBoardScreen';
+import New from '../screens/New';
+import Feed from '../screens/Feed';
 
 const Tab = createBottomTabNavigator();
 
 const TabRoutes: React.FC = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{headerShown: false}}>
       <Tab.Screen
         name="HomeScreen"
         component={HomeScreen}
@@ -25,7 +26,7 @@ const TabRoutes: React.FC = () => {
       />
       <Tab.Screen
         name="LocalMall"
-        component={HomeScreen}
+        component={New}
         options={{
           tabBarIcon: ({ color }) => (
             <Icon name="local-mall" color={color} size={28} />
@@ -34,7 +35,7 @@ const TabRoutes: React.FC = () => {
       />
       <Tab.Screen
         name="Search"
-        component={HomeScreen}
+        component={Feed}
         options={{
           tabBarIcon: ({ color }) => (
             <View
