@@ -18,9 +18,6 @@ import COLORS from '../../consts/colors';
 import categories from '../../consts/categories';
 import foods from '../../consts/foods';
 
-
-
-
 const { width } = Dimensions.get('screen');
 const cardWidth = width / 2 - 20;
 const user = 'Gabriel'
@@ -64,7 +61,6 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                   style={{ height: 35, width: 35, resizeMode: 'cover' }}
                 />
               </View>
-
               <Text
                 style={{
                   fontSize: 15,
@@ -78,7 +74,6 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                 {category.name}
               </Text>
             </View>
-
           </TouchableOpacity>
         ))}
       </ScrollView>
@@ -138,8 +133,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
           style={{ height: 50, width: 50, borderRadius: 25 }}
         />
       </View>
-
-       <View
+      <View
         style={{
           marginTop: 40,
           flexDirection: 'row',
@@ -149,7 +143,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
           <Icon name="search" size={28} />
           <TextInput
             style={{ flex: 1, fontSize: 18 }}
-            placeholder="Search for food"
+            placeholder=" Procure seus pratos"
           />
         </View>
         <View style={style.sortBtn}>

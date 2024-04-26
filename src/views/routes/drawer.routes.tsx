@@ -1,7 +1,7 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Feather } from '@expo/vector-icons'
 
-import TabRoutes from "./tab.route";
+import TabRoutes from "./tab.routes";
 import StackRoutes from "./stack.routes";
 
 const Drawer = createDrawerNavigator();
@@ -33,7 +33,14 @@ export default function DrawerRoutes() {
           drawerLabel: 'Novo'
         }}
       />
-      
+      <Drawer.Screen
+        name="cart"
+        component={StackRoutes}
+        options={{
+          drawerIcon: ({color, size}) => <Feather name="user" color={color} size={size} />,
+          drawerLabel: 'Meu Perfil'
+        }}
+      />
     </Drawer.Navigator>
   )
 }
