@@ -2,6 +2,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Feather } from '@expo/vector-icons';
 import TabRoutes from "./tab.routes";
 import StackRoutes from "./stack.routes";
+import CartScreen from "../screens/CartScreen";
 
 const Drawer = createDrawerNavigator();
 
@@ -43,8 +44,8 @@ export default function DrawerRoutes() {
         }}
       />
       <Drawer.Screen
-        name="cart"
-        component={StackRoutes}
+        name="CartScreen"
+        component={CartScreen}
         options={{
           drawerIcon: CartIcon,
           drawerLabel: 'Carrinho'
