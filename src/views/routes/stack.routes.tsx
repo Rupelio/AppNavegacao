@@ -14,7 +14,7 @@ export default function StackRoutes() {
         component={Profile}
       />
       <Stack.Screen
-        name="cart"
+        name="CartScreen"
         component={CartScreen}
       />
       <Stack.Screen

@@ -76,7 +76,7 @@ const TabRoutes: React.FC = () => {
         }}
       />
       <Tab.Screen
-        name="Cart"
+        name="CartScreen"
         component={CartScreen}
         options={{
           tabBarIcon: CartIcon,
