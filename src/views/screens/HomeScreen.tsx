@@ -20,7 +20,6 @@ import foods from "../../consts/foods";
 
 const { width } = Dimensions.get("screen");
 const cardWidth = width / 2 - 20;
-const user = "Gabriel";
 
 interface Food {
   id: string;
@@ -156,26 +155,9 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation, route }) => {
       </TouchableOpacity>
     );
   };
-
+  
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
-      <View style={style.header}>
-        <View>
-          <View style={{ flexDirection: "row" }}>
-            <Text style={{ fontSize: 28 }}>Olá,</Text>
-            <Text style={{ fontSize: 28, fontWeight: "bold", marginLeft: 10 }}>
-              {user}
-            </Text>
-          </View>
-          <Text style={{ marginTop: 5, fontSize: 22, color: COLORS.grey }}>
-            O que você gostaria hoje ?
-          </Text>
-        </View>
-        <Image
-          source={require("../../assets/person.png")}
-          style={{ height: 50, width: 50, borderRadius: 25 }}
-        />
-      </View>
       <View
         style={{
           marginTop: 40,
@@ -191,7 +173,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation, route }) => {
           />
         </View>
         <View style={style.sortBtn}>
-          <Icon name="tune" size={28} color={COLORS.white} />
+          <Icon name="tune" size={22} color={COLORS.white} />
         </View>
       </View>
       <View>
