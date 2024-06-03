@@ -42,8 +42,8 @@ const OnBoardScreen: React.FC<OnBoardScreenProps> = ({ navigation }) => {
           <View style={style.indicator} />
         </View>
         <PrimaryButton
-          onPress={() => navigation.navigate('Home')}
-          title="Get Started"
+          onPress={() => navigation.navigate('HomeScreen')}
+          title="Começar"
         />
       </View>
     </SafeAreaView>
